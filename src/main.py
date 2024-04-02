@@ -8,10 +8,21 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 app = FastAPI()
-labels = {0: 'chokis', 1: 'marias'}
-model = tf.keras.models.load_model(
-    "/Users/fernando/Repos/cookie_classifier_api/cookie_recognition.h5"
-)
+
+project_dir = Path(__file__).resolve().parents[1]
+cookie_recognition_model_path = os.path.join(project_dir, "cookie_recognition.h5")
+
+labels = {
+    0: "animalito",
+    1: "chokis",
+    2: "cremax-chocolate",
+    3: "emperador-combinado",
+    4: "maravillas",
+    5: "marianitas",
+    6: "marias",
+    7: "oreo",
+}
+model = tf.keras.models.load_model(cookie_recognition_model_path)
 
 
 @app.get("/")
