@@ -21,6 +21,7 @@ labels = {
     5: "marianitas",
     6: "marias",
     7: "oreo",
+    8: "pancrema",
 }
 model = tf.keras.models.load_model(cookie_recognition_model_path)
 
