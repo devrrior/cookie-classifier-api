@@ -17,7 +17,7 @@ labels = {
     1: "chokis",
     2: "crackets",
     3: "cremax-chocolate",
-    4: "em  ;perador-combinado",
+    4: "emperador-combinado",
     5: "maravillas",
     6: "marianitas",
     7: "marias",
