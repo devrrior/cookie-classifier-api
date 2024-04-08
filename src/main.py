@@ -15,13 +15,14 @@ cookie_recognition_model_path = os.path.join(project_dir, "cookie_recognition.h5
 labels = {
     0: "animalito",
     1: "chokis",
-    2: "cremax-chocolate",
-    3: "emperador-combinado",
-    4: "maravillas",
-    5: "marianitas",
-    6: "marias",
-    7: "oreo",
-    8: "pancrema",
+    2: "crackets",
+    3: "cremax-chocolate",
+    4: "em  ;perador-combinado",
+    5: "maravillas",
+    6: "marianitas",
+    7: "marias",
+    8: "oreo",
+    9: "pancrema",
 }
 model = tf.keras.models.load_model(cookie_recognition_model_path)
 
